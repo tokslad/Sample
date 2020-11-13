@@ -1,0 +1,112 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-13T03:25:33.920Z",
+        "line": 7,
+        "name": "",
+        "description": "",
+        "id": "test-2;",
+        "after": [
+          {
+            "result": {
+              "duration": 212040,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9459845509,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I navigate to \"https://dotnetfiddle.net/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://dotnetfiddle.net/\"",
+                  "offset": 14
+                }
+              ],
+              "location": "SampleStepdefs.iNavigateTo(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 950459038,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on getting started",
+            "match": {
+              "location": "SampleStepdefs.iClickOnGettingStarted()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 96582337,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on back editor",
+            "match": {
+              "location": "SampleStepdefs.iClickOnBackEditor()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2245277,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see \"Log in\" on the landing page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Log in\"",
+                  "offset": 13
+                }
+              ],
+              "location": "SampleStepdefs.iShouldSeeOnTheLandingPage(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Before"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Test 2",
+    "description": "  As a user of Dot Fiddle I want to play around\n  with the website to confirm I can do following below",
+    "id": "test-2",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/sample.feature",
+    "tags": [
+      {
+        "name": "@Before",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
