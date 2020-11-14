@@ -3,7 +3,18 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-14T00:56:41.924Z",
+        "start_timestamp": "2020-11-14T00:33:09.642Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2682419519,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.getDriver()"
+            }
+          }
+        ],
         "line": 7,
         "name": "",
         "description": "",
@@ -11,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 220328,
+              "duration": 63169,
               "status": "passed"
             },
             "match": {
@@ -24,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6121197305,
+              "duration": 3150239018,
               "status": "passed"
             },
             "line": 8,
@@ -42,7 +53,7 @@
           },
           {
             "result": {
-              "duration": 687151166,
+              "duration": 526338389,
               "status": "passed"
             },
             "line": 9,
@@ -54,7 +65,7 @@
           },
           {
             "result": {
-              "duration": 669546240,
+              "duration": 1689256466,
               "status": "passed"
             },
             "line": 10,
@@ -66,8 +77,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:86)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat org.junit.Assert.assertTrue(Assert.java:52)\n\tat stepdefs.SampleStepdefs.iShouldSeeIsDisplayedInTheLandingPageOutput(SampleStepdefs.java:39)\n\tat ✽.I should see \"Hello World\" is displayed in the landing page output(file:src/test/resources/features/sample.feature:11)\n",
-              "duration": 87901345,
+              "error_message": "org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d86.0.4240.111)\nBuild info: version: \u00273.141.5\u0027, revision: \u0027d54ebd709a\u0027, time: \u00272018-11-06T11:42:16\u0027\nSystem info: host: \u0027MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:1cdc:d48f:4d0:1dc6%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.7\u0027, java.version: \u002714.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 85.0.4183.83 (94abc2237ae0c..., userDataDir: /var/folders/w6/nbzy9r617w9...}, goog:chromeOptions: {debuggerAddress: localhost:61709}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 871d701e47ee0a6ad18551e409560238\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"output\"]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\n\tat pageObject.SamplePage.getLandingPageOutputText(SamplePage.java:37)\n\tat stepdefs.SampleStepdefs.iShouldSeeIsDisplayedInTheLandingPageOutput(SampleStepdefs.java:58)\n\tat ✽.I should see \"Hello World\" is displayed in the landing page output(file:src/test/resources/features/sample.feature:11)\n",
+              "duration": 1615284396206,
               "status": "failed"
             },
             "line": 11,
@@ -100,14 +111,3 @@
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/sample.feature",
     "tags": [
-      {
-        "name": "@Before",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
-  }
-]

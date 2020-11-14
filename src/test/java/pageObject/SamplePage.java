@@ -24,11 +24,12 @@ public class SamplePage {
         driver.findElement(gettingStarted).click();
     }
 
-    public void clickOnBackToEditor(){
+    public void clickOnBackToEditor() throws InterruptedException {
+        Thread.sleep(1000);
         driver.findElement(backEditor).click();
     }
 
-    public boolean isLandingDisplayed(){
+    public boolean isLandingPageOutputDisplayed(){
         return driver.findElement(landingPageOutput).isDisplayed();
     }
 
