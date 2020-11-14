@@ -5,10 +5,10 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
-import org.testng.asserts.Assertion;
 import pageObject.SamplePage;
 import utilities.Hooks;
+
+import static org.junit.Assert.assertTrue;
 
 public class SampleStepdefs {
     public WebDriver driver;
@@ -34,13 +34,11 @@ public class SampleStepdefs {
         samplePage.clickOnBackToEditor();
     }
 
-//    @Then("I should see landing page")
-//    public void iShouldSeeLandingPage(String landingPage){
-//        Assert
-//    }
+    @Then("I should see {string} is displayed in the landing page output")
+    public void iShouldSeeIsDisplayedInTheLandingPageOutput(String landingPageOutPut){
+        assertTrue(samplePage.isLandingDisplayed());
+        assertTrue(samplePage.getLandingPageOutputText().contentEquals(landingPageOutPut));
 
-    @Then("I should see {string} on the landing page")
-    public void iShouldSeeOnTheLandingPage(String landingPage) {
-        Assert.assertEquals(landingPage,"Log in");
     }
+
 }

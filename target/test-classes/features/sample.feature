@@ -8,4 +8,4 @@ Feature: Test 2
     Given I navigate to "https://dotnetfiddle.net/"
     When I click on getting started
     And I click on back editor
-    Then I should see "Log in" on the landing page
+    Then I should see "Hello World" is displayed in the landing page output

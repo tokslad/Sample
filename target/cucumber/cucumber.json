@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-13T03:25:33.920Z",
+        "start_timestamp": "2020-11-14T00:56:41.924Z",
         "line": 7,
         "name": "",
         "description": "",
@@ -11,7 +11,7 @@
         "after": [
           {
             "result": {
-              "duration": 212040,
+              "duration": 220328,
               "status": "passed"
             },
             "match": {
@@ -24,7 +24,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9459845509,
+              "duration": 6121197305,
               "status": "passed"
             },
             "line": 8,
@@ -42,7 +42,7 @@
           },
           {
             "result": {
-              "duration": 950459038,
+              "duration": 687151166,
               "status": "passed"
             },
             "line": 9,
@@ -54,7 +54,7 @@
           },
           {
             "result": {
-              "duration": 96582337,
+              "duration": 669546240,
               "status": "passed"
             },
             "line": 10,
@@ -66,19 +66,20 @@
           },
           {
             "result": {
-              "duration": 2245277,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:86)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat org.junit.Assert.assertTrue(Assert.java:52)\n\tat stepdefs.SampleStepdefs.iShouldSeeIsDisplayedInTheLandingPageOutput(SampleStepdefs.java:39)\n\tat ✽.I should see \"Hello World\" is displayed in the landing page output(file:src/test/resources/features/sample.feature:11)\n",
+              "duration": 87901345,
+              "status": "failed"
             },
             "line": 11,
-            "name": "I should see \"Log in\" on the landing page",
+            "name": "I should see \"Hello World\" is displayed in the landing page output",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Log in\"",
+                  "val": "\"Hello World\"",
                   "offset": 13
                 }
               ],
-              "location": "SampleStepdefs.iShouldSeeOnTheLandingPage(String)"
+              "location": "SampleStepdefs.iShouldSeeIsDisplayedInTheLandingPageOutput(String)"
             },
             "keyword": "Then "
           }

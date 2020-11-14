@@ -9,7 +9,7 @@ public class SamplePage {
 
     By gettingStarted = By.xpath("//a[@href=\"/GettingStarted/\"]");
     By backEditor = By.xpath("(//a[@class=\"btn btn-default\"])[1]");
-    By landingPage = By.xpath("//*[@id=\"login-button\"]");
+    By landingPageOutput = By.xpath("//*[@id=\"output\"]");
 
 
     public SamplePage(Hooks hooks) {
@@ -29,7 +29,11 @@ public class SamplePage {
     }
 
     public boolean isLandingDisplayed(){
-        return driver.findElement(landingPage).isDisplayed();
+        return driver.findElement(landingPageOutput).isDisplayed();
+    }
+
+    public String getLandingPageOutputText(){
+        return driver.findElement(landingPageOutput).getText();
     }
 
 
